@@ -42,4 +42,10 @@ export class Menu extends React.Component {
       </form>
     );
   }
+
+componentDidMount() {
+  const fastButton = document.querySelector('input[value="fast"]');
+  fastButton.setAttribute('checked', true);
+}
+
 }
